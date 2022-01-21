@@ -1,0 +1,531 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+text-decoration: none;
+color: white;
+}
+body{ 
+  margin: 0   ;
+  font-family:Arial, Helvetica, sans-serif;
+}
+nav{
+  background-color: gainsboro ;
+  display: flex;
+  height: 7vh;
+}
+nav .left {
+  flex: 50%;
+  text-align: left;
+  padding-left: 60px;
+  display: flex;
+  align-items: center;
+}
+nav .left img {
+  width: 50px; 
+  margin: 10px; 
+  margin-right: 40px
+}
+
+nav .left ul{
+  margin: 0;
+  padding: 0;
+  align-content: center;
+  align-items: center;
+  height: 100%; 
+  min-width: 75px;
+  cursor: pointer;
+  text-align: center;
+} 
+nav .left li{
+  display: inline-block;
+  flex-direction: row;
+  margin: 20px;
+  height: auto; 
+}
+
+nav .left ul li a{
+  font-weight: bold;
+  font-size: large;
+  color: black;
+  text-decoration: none;
+  
+}
+nav .left ul:hover{
+  background-color: lightgray;
+  color: black;
+}
+
+nav .right {
+  flex: 50%;
+  padding-right: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav .right .btn-group .btn{
+background-color: orangered;
+color: #fff;
+}
+
+nav .right .contact{
+   background-color: rgb(255, 81, 0);
+   color: white;
+   padding: 8px 15px;
+   border-radius: 8px;
+   text-decoration: none;
+   margin-left: 20px;
+}
+
+/* nav .right li{
+display: inline-block;
+flex-direction: row;
+margin: 20px;
+height: auto; 
+} */
+
+/* nav .right ul li a{
+font-weight: bold;
+font-size: large;
+color: black;
+text-decoration: none;
+
+}
+
+nav .right ul:hover{
+background-color: lightgray;
+color: black;
+} */
+/* FIle Card */
+.contain{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 93vh;
+}
+
+.contain .section{
+  display: flex;
+  width: 85%;
+}
+
+.section .left{
+  flex: 30%;
+  display: inline;
+}
+
+.section .left img{
+  width: 100%; 
+  border-radius: 25px;
+  inline-size: 100%;
+
+}
+
+.section .right{
+  flex: 70%;
+  padding-left: 50px  ;
+  text-align: justify;
+  font-size: large;
+  font-weight: normal; 
+  align-items: center;
+}
+
+.section .right h1{
+  margin-top: 0;
+  margin-bottom: 10px;
+}  
+
+.section .right p {
+  color: grey;
+  margin-top: 0;
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+  line-height: 30px;
+}
+
+.section .right .skillcontainer {
+  display: flex;
+}
+
+.section .right .skillcontainer div{
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 20px;
+  margin-left: 0;
+}   
+
+.section .right .skillcontainer img{
+  width: 50px;
+}
+
+.social{
+  display: inline;
+  position: absolute;
+  right: 0%;
+  bottom: 35%;
+  align-items: center;
+}
+.socialmedia{
+  margin: 6px 12px;
+  padding: 2px;
+}
+.socialmedia a img{
+  display: block;
+  width: 40px;
+  margin: 5px;
+  padding: 5px;
+  border: 3px solid black;
+  border-radius: 30%;
+}
+
+/* File ContacT Form */
+form {
+  width: 400px; 
+  margin: 50px auto;
+  align-items: center;
+  justify-content: center;
+  height: 53vh;
+}
+
+.input label {
+  font-weight:900;
+  font-size: large;
+  text-decoration:none;
+}
+
+body div button {
+  cursor: pointer;
+          padding: 10px;
+          font-size: medium;
+          font-weight: bold;
+          margin: 20px auto;
+          background-color: rgb(236, 168, 41);
+          border-color: rgb(236, 168, 41);
+          border-radius: 5px; 
+}
+
+.input input{
+  border: 5px solid gainsboro;
+  width: 100%;
+  background-color: gainsboro;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+}
+
+.input textarea{
+  border: 5px solid gainsboro;
+  width: 100%;
+  background-color: gainsboro;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.input select{
+  font-size: medium;
+  color :rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  border: 5px solid gainsboro;
+  width: 100%;
+  background-color: gainsboro;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px; 
+}
+
+.checkbox {
+  margin-top: 0px; 
+  margin-bottom: 20px;
+}
+
+.checkbox label a{
+  text-decoration: none;
+}
+
+
+/* Blog Form */
+.blog-form-edit {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.blog-form-edit .form-container {
+  width: 500px;
+}
+
+.blog-form-edit .form-container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.blog-form-edit form label {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.blog-form-edit form input,
+textarea,
+select {
+  border: 5px solid gainsboro;
+  width: 100%;
+  background-color: gainsboro;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.blog-form-edit form textarea {
+  height: 250px;
+}
+
+.blog-form-edit form .input-blog-image-group {
+  border: 5px solid gainsboro;
+  width: 100%;
+  background-color: gainsboro;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.blog-form-edit form .input-blog-image-group label p {
+  font-size: 15px;
+}
+
+.blog-form-edit form .input-blog-image-group label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-form-edit form .button-group {
+  text-align: right;
+}
+
+.blog-form-edit form button {
+  margin-top: 10px;
+  padding: 8px 20px;
+  font-size: 17px;
+  background: #ec4d37;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.blog hr {
+  border: 1px solid #dbdbdb;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Blog list */
+.blog .blog-list {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blog .blog-list .blog-list-item {
+  width: 80%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #dbdbdb;
+  border-radius: 8px;
+  display: flex;
+}
+
+.blog .blog-list .blog-list-item .blog-image {
+  flex: 1;
+}
+
+.blog .blog-list .blog-list-item .blog-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.blog .blog-list .blog-list-item .blog-content {
+  padding-left: 20px;
+  flex: 2;
+}
+
+.blog .blog-list .btn-group {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.blog .blog-list .btn-group .btn-edit {
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 4px;
+  background: #dbdbdb;
+}
+
+.blog .blog-list .btn-group .btn-post {
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 4px;
+  background: #ec4d37;
+  color: #fff;
+}
+
+.blog .blog-list h1 a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.blog .blog-list .detail-blog-content {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.blog .blog-list .blog-list-item p {
+  margin-top: 20px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+/* Blog Detail */
+.blog-detail {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-detail-container {
+  width: 80%;
+  margin: 40px 0;
+}
+
+.blog-detail-container img {
+  width: 100%;
+}
+
+.blog-detail-container h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 120%;
+  margin-bottom: 15px;
+}
+
+.blog-detail-container .author {
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.blog-detail-container p {
+  margin-top: 40px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: justify;
+}
+
+
+/* dibawah 600px code dibawah ini dijalankan */
+@media screen and (max-width: 600px) {
+  nav {
+      width: auto;
+      display: inline;
+      height: auto;
+      background-color: gainsboro;
+  }
+
+  nav .left {
+      padding: 5px;
+      width: auto;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+  }
+  nav .left ul{
+      margin: 0;
+      width: 100%;
+  }
+
+  nav .left img {
+      width: 50px;
+      padding: 0;
+      margin: 0;
+  }
+
+  nav .right {
+      padding: 5px;
+      align-items: center;
+      text-align: center;
+  }
+
+  nav .right a {
+      align-items: center;
+      text-align: center;
+  }
+
+  nav, .container {
+      flex-direction: row;
+  }
+  .container {
+      display: block;
+  }
+
+  .container .section {
+      display: block;
+      margin: 100px auto;
+  }
+
+  .section .right {
+      padding-left: 5px;
+      padding-top: 50px;
+  }
+
+  .section .right .skillcontainer {
+      display: block;
+  }
+
+  .right h1 {
+      margin-top: 30px;
+  }
+  .social {
+  position:relative;
+  }
+
+  .socialmedia{
+      display: flex;
+  }
+  .socialmedia a img{
+      width: 15px;
+      margin: 5px;
+      padding: 5px;
+      border-radius: 50%;
+  }
+  .social h2 {
+      text-size-adjust: 20px;
+  }
+}
+

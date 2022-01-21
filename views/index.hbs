@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Web</title>
+    <link rel="stylesheet" href="../public/Asset/css/stylee.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <nav>
+      <div class="left">
+        <img src="../public/Asset/images/download.png" alt="logo">
+        <ul>
+            <li><a href="/"style="color: rgb(218, 106, 32)">Home</a></li>    
+        </ul>
+        <ul>
+          <li><a href="/blog">Blog</a></li>
+        </ul> 
+        </div>
+        <div class="right">
+        {{#if isLogin}}
+              <div class="btn-group ms-auto">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span>Hallo, {{user.name}}</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="drop"><a class="dropdown-item" href="/logout">Logout</a></li>
+                    <li class="drop"><a class="dropdown-item" href="ContactForm">Contact Me</a>
+                </ul>
+            </div>
+            {{else}}
+              <div class="btn-group ms-auto">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Log In
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="drop"><a class="dropdown-item" href="/login">Login</a></li>
+                    <li class="drop"><a class="dropdown-item" href="/Register">Register</a></li>
+                    <li class="drop"><a class="dropdown-item" href="ContactForm">Contact Me</a>
+                </ul>
+            </div>
+            {{/if}}
+        </div>
+    </nav>
+    <div class="contain">
+        <div class="section">   
+            <div class="left">
+                <div style="
+                    padding: 15px; 
+                    box-shadow: 0px 0px 15px;
+                    border-radius: 25px;">
+                <div>
+                    <img src="../public/Asset/images/scenery-zoom-meeting-background-design-template-9de6803b1c553f47031ce0f9f56a86a8_screen.jpg">
+                </div>
+                <h1>Dean Wahyu Pratanda</h1>
+                <p style="line-height: 30px; color:grey; text-align: justify;">Lorem dolor sit amet consectetur adipisicing elit. Fuga velit fugiat est modi? Voluptatibus voluptatum, eius distinctio aspernatur, accusamus harum sunt explicabo odio repellat aliquid mollitia voluptates dolore eveniet ipsum?</p>
+                
+                <table border="1" style="width: 100%; border-collapse: collapse;" >
+                <tr style="background-color: silver;">
+                    <th style="padding: 10px;">Experience</th>
+                    <th style="padding: 10px; text-align: center">Year</th>
+                </tr>
+                {{#each project}}  
+                <tr>
+                    <td style="padding: 10px">{{this.project}}</td>
+                    <td style="padding: 10px; text-align: center;">{{this.year}}</td>
+                </tr>
+                {{/each}}
+                </table>
+            </div>
+            </div>
+            <div class="right">
+                <h1>What I do</h1>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quisquam neque impedit non quos odio 
+                    autem aperiam pariatur molestias consequuntur dolorum nihil et tenetur rem expedita quidem, 
+                    dignissimos, vitae at Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem est 
+                    consectetur suscipit eaque in laboriosam voluptates, mollitia rerum at placeat inventore 
+                    dignissimos qui ducimus aliquam et! Quae earum minus illum?</p>
+                <br>
+                <br>
+                <div class="skillcontainer">
+                    <div>
+                        <img src="../public/Asset/images/js-square-brands.svg" alt="javascript" style="width: 50px;">
+                        <h2>Frontend Developer</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi dignissimos nemo necessitatibus 
+                            doloremque!</p>
+                    </div>
+                    <div>
+                        <img src="../public/Asset/images/github-brands.svg" alt="javascript" style="width: 50px;"> 
+                        <h2>Version Control</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium reiciendis dolorem doloremque 
+                            deserunt.</p>
+                    </div>
+                    <div>
+                        <img src="../public/Asset/images/download (1).png" alt="javascript">
+                        <h2>Version Control</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ut, doloribus libero repellendus 
+                            iure beatae.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="social">
+                <div class="socialmedia">
+                    <a href="https://web.facebook.com/nanda.dean/">
+                        <img src="../public/Asset/images/facebook-brands.svg" alt="facebook">
+                    </a>
+                    <a href="https://twitter.com/DeanWP_">
+                        <img src="../public/Asset/images/twitter-brands.svg" alt="twitter">
+                    </a>
+                    <a href="https://www.instagram.com/deanwahyu_/">
+                        <img src="../public/Asset/images/instagram-brands.svg" alt="instagram">
+                    </a>
+                    <a href="mailto:deanwahyu12@gmail.com">
+                        <img src="../public/Asset/images/envelope-regular.svg" alt="gmail">
+                    </a>
+                    <a href="https://wa.me/6282257782077">
+                        <img src="../public/Asset/images/whatsapp-brands.svg" alt="whatapp">
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>           
+</body>
+</html> 

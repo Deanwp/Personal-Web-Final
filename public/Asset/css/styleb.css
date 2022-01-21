@@ -1,0 +1,23 @@
+.button-orange{
+    background-color: orangered;
+}
+.text-white{
+    color: white;
+}
+
+.navbar {
+    height: 7vh;
+    background-color: gainsboro !important;
+}
+
+.container-fluid{
+    padding: 0px 60px;
+}
+
+.container-body {
+    height: 93vh;
+}
+
+.container-form {
+    width: 400px;
+}   
